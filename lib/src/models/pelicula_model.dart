@@ -70,4 +70,12 @@ class Pelicula {
       return 'https://image.tmdb.org/t/p/w500/$posterPath';
     }
   }
+
+  getBackgroundImg(){
+    if( posterPath == null){
+      return 'https://image.freepik.com/vector-gratis/ilustracion-icono-galeria_53876-27002.jpg';
+    }else{
+      return 'https://image.tmdb.org/t/p/w500/$backdropPath';
+    }
+  }
 }
